@@ -1,0 +1,18 @@
+mobizel_markdown_docs:
+    contexts:
+        main:
+            path: /current
+            docs_dir: '%docs_dir%/current'
+            metadata:
+                title: 'Documentation - current'
+
+        versions:
+            path: /{version}
+            docs_dir: '%docs_dir%/{version}'
+            requirements:
+                version: '\d+\.\d+'
+            metadata:
+                title: 'Documentation - {version}'
+
+        # You can add as many contexts as you need
+        # See https://github.com/mobizel/markdown-docs-bundle/blob/master/docs/how-to-add-docs-contexts.md
